@@ -32,8 +32,8 @@ define([
 
       // Optional header
       var header = {};
-      $root.find(".sample-request-header:checked").each(function(i, element) {
-          var group = $(element).data("sample-request-header-group-id");
+      $root.find(".sample-request-header").each(function(i, element) {
+          var group = $(element).data("sample-request-header-group");
           $root.find("[data-sample-request-header-group=\"" + group + "\"]").each(function(i, element) {
             var key = $(element).data("sample-request-header-name");
             var value = element.value;
@@ -47,8 +47,8 @@ define([
       // create JSON dictionary of parameters
       var param = {};
       var paramType = {};
-      $root.find(".sample-request-param:checked").each(function(i, element) {
-          var group = $(element).data("sample-request-param-group-id");
+      $root.find(".sample-request-param").each(function(i, element) {
+          var group = $(element).data("sample-request-param-group");
           $root.find("[data-sample-request-param-group=\"" + group + "\"]").each(function(i, element) {
             var key = $(element).data("sample-request-param-name");
             var value = element.value;

@@ -138,7 +138,7 @@ td {
   padding: 30px 0;
 }
 
-#apidoc h1 {
+/*#apidoc h1 {
   font-family: "Source Sans Pro", monospace, sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -154,7 +154,7 @@ td {
   font-size: 22px;
   line-height: 26px;
   padding-top: 14px;
-}
+}*/
 
 /* ------------------------------------------------------------------------------------------
  * pre / code
@@ -177,7 +177,7 @@ pre.language-json {
 }
 
 pre.language-html {
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 pre.language-html:before {
