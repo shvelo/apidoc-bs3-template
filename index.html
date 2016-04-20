@@ -41,7 +41,7 @@
   {{#if template.withCompare}}
   <div class="pull-right">
     <div class="btn-group">
-      <button id="version" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+      <button id="version" class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
         <strong>{{version}}</strong> <span class="caret"></span>
       </button>
       <ul id="versions" class="dropdown-menu open-left">
@@ -124,13 +124,13 @@
 
     {{#if article.permission}}
       <p>
-        {{__ "Permission:"}}
+        {{__ "Permissions:"}}
         {{#each article.permission}}
-          <strong>{{name}}</strong>
-          {{#if title}}
-            &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br description}}" title="" data-original-title="{{title}}"><span class="label label-info"><i class="glyphicon glyphicon-info-sign glyphicon-white"></i></span></a>
-            {{#unless @last}}, {{/unless}}
-          {{/if}}
+          &nbsp;<a href="#" title="{{title}}" class="label label-info"
+          {{#if title}}data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br description}}" data-original-title="{{title}}"{{/if}}>
+              <strong>{{name}}</strong>
+              {{#if title}}<i class="glyphicon glyphicon-info-sign glyphicon-white"></i>{{/if}}
+          </a>
         {{/each}}
       </p>
     {{/if}}

@@ -13,7 +13,7 @@ define({
         'No response values​​.'         : '無對應資料.',
         'optional'                    : '選項',
         'Parameter'                   : '參數',
-        'Permission:'                 : '允許:',
+        'Permissions:'                 : '允許:',
         'Response'                    : '回應',
         'Send'                        : '發送',
         'Send a Sample Request'       : '發送試用需求',

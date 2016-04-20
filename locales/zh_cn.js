@@ -13,7 +13,7 @@ define({
         'No response values.'         : '无返回值.',
         'optional'                    : '可选',
         'Parameter'                   : '参数',
-        'Permission:'                 : '权限:',
+        'Permissions:'                 : '权限:',
         'Response'                    : '返回',
         'Send'                        : '发送',
         'Send a Sample Request'       : '发送示例请求',
