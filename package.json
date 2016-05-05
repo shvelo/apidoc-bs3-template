@@ -1,6 +1,6 @@
 {
   "name": "apidoc-template-bs3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bootstrap 3 template for apiDoc",
   "main": "template/index.html",
   "scripts": {

@@ -178,7 +178,7 @@
         <tbody>
       {{#each this}}
           <tr>
-            <td class="code">{{{splitFill field "." "&nbsp;&nbsp;"}}}{{#if optional}} <span class="label label-optional">{{__ "optional"}}</span>{{/if}}</td>
+            <td class="code">{{{splitFill field "." "&nbsp;&nbsp;"}}}{{#if optional}} <span class="label label-default label-optional">{{__ "optional"}}</span>{{/if}}</td>
             {{#if ../../_hasType}}
               <td>
                 {{{type}}}
@@ -544,11 +544,11 @@
           <td class="code">
             {{{splitFill source.field "." "&nbsp;&nbsp;"}}}
             {{#if source.optional}}
-              {{#if compare.optional}} <span class="label label-optional">{{__ "optional"}}</span>
-              {{else}} <span class="label label-optional label-ins">{{__ "optional"}}</span>
+              {{#if compare.optional}} <span class="label label-default label-optional">{{__ "optional"}}</span>
+              {{else}} <span class="label label-default label-optional label-ins">{{__ "optional"}}</span>
               {{/if}}
             {{else}}
-              {{#if compare.optional}} <span class="label label-optional label-del">{{__ "optional"}}</span>{{/if}}
+              {{#if compare.optional}} <span class="label label-default label-optional label-del">{{__ "optional"}}</span>{{/if}}
             {{/if}}
           </td>
 
@@ -576,7 +576,7 @@
         <tr class="ins">
           <td class="code">
             {{{splitFill source.field "." "&nbsp;&nbsp;"}}}
-            {{#if source.optional}} <span class="label label-optional label-ins">{{__ "optional"}}</span>{{/if}}
+            {{#if source.optional}} <span class="label label-default label-optional label-ins">{{__ "optional"}}</span>{{/if}}
           </td>
 
         {{#if source.type}}
@@ -596,7 +596,7 @@
         <tr class="del">
           <td class="code">
             {{{splitFill compare.field "." "&nbsp;&nbsp;"}}}
-            {{#if compare.optional}} <span class="label label-optional label-del">{{__ "optional"}}</span>{{/if}}
+            {{#if compare.optional}} <span class="label label-default label-optional label-del">{{__ "optional"}}</span>{{/if}}
           </td>
 
         {{#if compare.type}}
