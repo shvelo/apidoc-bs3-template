@@ -524,4 +524,10 @@ ul.nav-tabs {
     margin: 10px 0 20px 0;
   }
 
-} /* /@media print */
+}
+
+@media print {
+  .hide-print {
+    display: none;
+  }
+}
